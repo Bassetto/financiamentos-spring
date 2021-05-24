@@ -16,6 +16,9 @@
       <div class="card text-center">
         <form class="card-body" method="POST" th:object="${financiamento}"
               th:action="@{/financiamento/salvar}">
+          <div>
+            <input type="hidden" name="id" id="id" th:field="*{id}">
+          </div>
           <div class="row">
             <div class="form-floating col-md-12 my-2">
               <input type="text" class="form-control" placeholder="Digite o nome do cliente" name="nome" id="nome" th:field="*{nome}" required>

@@ -59,7 +59,7 @@ public class FinanciamentoController {
 
         FinanciamentoDto financiamento = service.editarFinanciamento(id);
 
-        ModelAndView view = new ModelAndView("detalhar-financiamento");
+        ModelAndView view = new ModelAndView("adicionar");
 
         view.addObject("financiamento", new FinanciamentoEntity());
 
